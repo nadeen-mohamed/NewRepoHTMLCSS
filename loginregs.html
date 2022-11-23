@@ -91,7 +91,7 @@ input[type="checkbox"]{
   width: 410px;
 padding-bottom:30px;
 
-  padding: 30px;
+  padding: 10px;
  
    max-width: 500px;
   width: 100%;
@@ -99,7 +99,7 @@ padding-bottom:30px;
   
   margin: 50px auto;
 
-
+  
 }
 
 #show:checked ~ .container{
@@ -140,14 +140,7 @@ form .data input{
   border: 1px solid #CCB07C;
   
 }
-input:valid~.invalid{
-  display: none;
- 
-  
-}
-input:invalid~.valid{
-  display: none;
-}
+
 form .data input:hover{
   border-color: #CCB07C;
   border-width: 2px;
@@ -259,12 +252,12 @@ h1{
                 <div id="msg"></div>
                   <label>Email or Phone</label>
                   
-                  <input type="text" required id="email" value=""  placeholder="Entre your Number phone/Email">
+                  <input type="text" required id="email" value="">
                   
                </div>
                <div class="data">
                   <label>Password</label>
-                  <input type="password" required id="pass" value=""  placeholder="Entre yourpassword">
+                  <input type="password" required id="pass" value="">
                   <div id="msg" style="color: red; font-size: 2px;"></div>
                </div>
                <div class="forgot-pass">
@@ -272,7 +265,7 @@ h1{
                </div>
                 <div class="inner"></div>
                  
-                <input type="submit" value="Login" class="btn">
+                <input type="submit" value="Login" class="btn" ">
                <h2>Login By</h2>
               <img src="images/imagesF.png" alt="Facbook" usemap="#Facbook" width="40" height="20">
 
@@ -324,7 +317,7 @@ h1{
                <div class="data">
                   <label>Confirm Password</label>
                   <input type="password" required placeholder="confirm your password">
-                 
+                
                </div>
                
              
