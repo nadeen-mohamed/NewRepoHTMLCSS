@@ -1,0 +1,366 @@
+<!DOCTYPE HTML/>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      
+      <title>Welcome Page</title>
+      <link rel="stylesheet" href="css11/all.min.css" />
+        
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+         
+    
+   
+      <style>
+         *{
+  margin:0;
+  padding:0;
+}
+
+body{
+    background-image:url('images/homepic.jpeg');
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:#926239;
+  line-height:1.6;
+}
+
+#showcase{
+ 
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+#showcase h1{
+  font-size:50px;
+  line-height:1.2;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+#showcase .button{
+  font-size:18px;
+  text-decoration:none;
+  color:#926239;
+  border:#926239 5px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-top:20px;
+   background-color:#CCB07C;
+}
+
+#showcase .button:hover{
+  background:#926239;
+  
+   color:#CCB07C;
+}
+
+      /*login*/
+      .show-btn{
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3498db;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.show-btn, .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.container{
+  display: none;
+  background: #fff;
+  width: 410px;
+padding-bottom:30px;
+
+  padding: 50px;
+ 
+   max-width: 500px;
+  width: 100%;
+ 
+  
+  margin: 50px auto;
+
+  padding-top: 3px;
+}
+
+#show:checked ~ .container{
+  display: block;
+}
+.container .close-btn{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .close-btn:hover{
+  color: #CCB07C;
+}
+.container .text{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: #CCB07C;
+}
+.container form{
+  margin-top: -20px;
+}
+.container form .data{
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+form .data label{
+  font-size: 18px;
+}
+form .data input{
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid #CCB07C;
+  
+}
+input:valid~.invalid{
+  display: none;
+ 
+  
+}
+input:invalid~.valid{
+  display: none;
+}
+form .data input:hover{
+  border-color: #CCB07C;
+  border-width: 2px;
+  color:  #CCB07C;
+
+}
+
+ form .data input:focus-visible{
+  border-color: #CCB07C;
+  border: 10px ;
+  color: #CCB07C;
+}
+form .forgot-pass{
+  margin-top: -8px;
+  border-color: #CCB07C;
+  color: #CCB07C;
+}
+form .forgot-pass a{
+  color: #CCB07C;
+  text-decoration: none;
+}
+form .forgot-pass a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+form .signup-link{
+  text-align: center;
+}
+form .signup-link a{
+  color: #3498db;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+/*regs*/
+
+
+#sho:checked ~ .container{
+  display: block;
+}
+.sho-btn, .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type="submit" i] {
+    width: 100%;
+   padding: 8px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 4px;
+  background:  #926239;
+  color: #CCB07C;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+   
+}
+input[type="submit" i]:hover{
+    color:#926239;
+     background:  #CCB07C;
+}
+#shoo:checked ~ .container{
+  display: block;
+}
+.shoo-btn, .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1{
+     color:#CCB07C;
+}
+
+      </style>
+   </head>
+<body id="showcase">
+   
+   
+
+    <div class="center">
+     <h1>Login To Your Account</h1>
+     <br/>
+         <input type="checkbox" id="shoo">
+         <label for="shoo" class="button">login</label>
+         <br/> <br/> <br/>
+       
+        
+         
+         <div class="container">
+            <label for="shoo" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Login Form
+            </div>
+            <form action="index.html">
+               <div class="data">
+                <div id="msg"></div>
+                  <label>Email or Phone</label>
+                  
+                  <input type="text" required id="email" value="">
+                  
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input type="password" required id="pass" value="">
+                  <div id="msg" style="color: red; font-size: 2px;"></div>
+               </div>
+               <div class="forgot-pass">
+                  <a href="#" class="btn">Forgot Password?</a>
+               </div>
+                <div class="inner"></div>
+                 
+                <input type="submit" value="Login" class="btn" onclick="CheckValues();">
+               <h2>Login By</h2>
+              <img src="images/imagesF.png" alt="Facbook" usemap="#Facbook" width="40" height="20">
+
+<map name="Facbook">
+ <area shape="rect" coords="0,2,212,216" title="Facbook" href="https://www.google.com/search?q=facebook&oq=fac&aqs=chrome.3.35i39l2j69i57j0i131i433i512j69i60j69i65l3.3686j0j7&sourceid=chrome&ie=UTF-8">
+
+</map>
+
+<img src="images/gmail.png" alt="Gmail" usemap="#Gmail" width="40" height="20">
+
+<map name="Gmail">
+    <area shape="poly" coords="235,5,229,186,35,191,13,2" title="Gmail" href="https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop">
+ </map>
+            </form>
+         </div>
+         
+      </div>
+    <div class="center">
+   <h1 >Create Your Account</h1>
+    <br/>
+     <input type="checkbox" id="sho">
+         <label for="sho" class="button">Register</label>
+         <br/>
+         <div class="container">
+            <label for="sho" class="close-btn fas fa-times" title="close"></label>
+            <div class="text">
+               Register Form
+            </div>
+            <form action="thnxpage.html">
+              
+              
+               <div class="data">
+                  <label>FirstName</label>
+                  <input type="text" required placeholder="Entre your First Name">
+               </div>
+               <div class="data">
+                  <label>LastName</label>
+                  <input type="text" required placeholder="Entre your Last Name">
+               </div>
+               <div class="data">
+                  <label>Email</label>
+                  <input type="text" required placeholder="Entre your Email">
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input type="password" required placeholder="Entre your password">
+                  
+               </div>
+               <div class="data">
+                  <label>Confirm Password</label>
+                  <input type="password" required placeholder="confirm your password">
+                  <span class="invalid" style="color:red;">not vaild</span>
+                  <span class="valid" style="color:green;">valid</span>
+               </div>
+               
+             
+              
+                  <div class="inner"></div>
+                 
+                <input type="submit" value="Done" class="btn" >
+              <h2>Sign Up By Using</h2>
+              <img src="images/imagesF.png" alt="Facbook" usemap="#Facbook" width="40" height="20">
+
+<map name="Facbook">
+ <area shape="rect" coords="0,2,212,216" title="Facbook" href="https://www.google.com/search?q=facebook&oq=fac&aqs=chrome.3.35i39l2j69i57j0i131i433i512j69i60j69i65l3.3686j0j7&sourceid=chrome&ie=UTF-8">
+
+</map>
+
+<img src="images/gmail.png" alt="Gmail" usemap="#Gmail" width="40" height="20">
+
+<map name="Gmail">
+    <area shape="poly" coords="235,5,229,186,35,191,13,2" title="Gmail" href="https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop">
+ </map>
+
+
+
+              
+            </form>
+         </div>
+         
+      </div>
+</div>
+
+
+ 
+ 
+
+ 
+ 
+  </body>
+</html>
